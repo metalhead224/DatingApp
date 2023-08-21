@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj": {}
+    "d:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj": {
+    "d:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj",
+        "projectUniqueName": "d:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj",
+        "projectPath": "d:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\API.csproj",
         "packagesPath": "C:\\Users\\suman\\.nuget\\packages\\",
-        "outputPath": "D:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\obj\\",
+        "outputPath": "d:\\MyFiles\\academic stuffs\\courses-file\\Dating-app\\DatingApp\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\suman\\AppData\\Roaming\\NuGet\\NuGet.Config",

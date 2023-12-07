@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for guff-cold-sea-1028 on 2023-12-07T00:25:44+05:45
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "guff-cold-sea-1028"
+primary_region = "sin"
+
+[build]
+  image = "metalhead224/guffgaff:latest"
+
+[env]
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "487385366554317"
+  CloudinarySettings__CloudName = "deqzcltju"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 1024

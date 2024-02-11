@@ -15,6 +15,8 @@ namespace API.Extensions
             services.AddIdentityCore<AppUser>(opt => 
             {
                 opt.Password.RequireNonAlphanumeric = false;
+                opt.Password.RequiredUniqueChars = 0;
+                opt.Password.RequireLowercase = false;
             })
                 .AddRoles<AppRole>()
                 .AddRoleManager<RoleManager<AppRole>>()

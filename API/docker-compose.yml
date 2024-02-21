@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: suman
+      POSTGRES_PASSWORD: suman
+      POSTGRES_DB: guff_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - .dbdata:/var/lib/postgres/guff_db
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: always
+    ports:
+      - "5050:80" # Map port 5050 on the host to port 80 on the container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: suman@test.com
+      PGADMIN_DEFAULT_PASSWORD: suman
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+
+volumes:
+  .dbdata:
+  pgadmin-data:
